@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+<style>
+    * {
+        font-family: 'Oswald';
+    }
+
+    input[type="reset"] {
+        background-color: red;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+    input[type="submit"] {
+        background-color: green;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+    body {
+        background-color: lightslategrey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .form {
+        background-color: white; 
+        padding: 20px;
+        /* Remove fixed width and use percentages instead */
+        width: 80%; 
+        /* Add responsiveness with flexbox */
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .form label,
+    .form input[type="text"],
+    .form input[type="email"],
+    .form input[type="date"],
+    .form input[type="password"],
+    .form input[type="tel"],
+    .form textarea {
+        /* Set width to 100% for each element inside the form */
+        width: 100%; 
+        padding: 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box; 
+    }
+
+    h1 {
+        color: black;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<div class="form">
+    <h1>Registration Form</h1>
+    <form>
+ 
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname">
+        
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname">
+        
+        <label for="nname">Nick Name:</label>
+        <input type="text" name="nname">
+        
+        <label for="email">Email:</label>
+        <input type="email" name="email">
+        
+        <label for="password">Password:</label> <br>
+        <input type="password" name="password"><br>
+        
+        <label for="bday">Date of Birth:</label> 
+        <input type="date" name="bday">
+        
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" value="other">
+        <label for="other">Other</label> <br>
+        
+        <label for="mobile">Mobile:</label>
+        <input type="tel" name="mobile"> <br>
+        
+        <label for="address">Address:</label>
+        <textarea name="address" rows="4"></textarea>
+        
+        <input type="submit" value="Submit"> 
+        <input type="reset" value="Reset">
+    </form>
+</div>
+
+</body>
+</html>
