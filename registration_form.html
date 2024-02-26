@@ -27,20 +27,20 @@
         cursor: pointer;
     }
 
-    body {
-        background-color: lightslategrey;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-    }
+body {
+    background-color: lightslategrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
 
     .form {
         background-color: white; 
         padding: 20px;
         /* Remove fixed width and use percentages instead */
         width: 80%; 
+        /* Add responsiveness with flexbox */
         display: flex;
         flex-wrap: wrap;
     }
@@ -59,7 +59,7 @@
         box-sizing: border-box; 
     }
 
-   .header {
+    h1 {
         color: black;
         text-align: center;
     }
@@ -67,9 +67,8 @@
 </head>
 <body>
 
-
 <div class="form">
-    <h1 class="header">Registration Form</h1>
+    <h1>Registration Form</h1>
     <form>
  
         <label for="fname">First Name:</label>
