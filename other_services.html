@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Services</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body class="body-forms">
+    <div class="form-container">
+        <h2 class="form-title">Other Services</h2>
+        <form id="prayer-intentions-form" action="#success-message">
+
+            <div class="form-field">
+                <label for="full_name">Full Name:</label>
+                <input type="text" id="full_name" name="full_name" required>
+            </div>
+
+            <div class="form-field">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-field">
+                <label for="request">Please type your request (House Blessing, Car Blessing, etc.) </label>
+                <input type="text" id="request" name="request" required>
+            </div>
+
+            <div class="form-field">
+                <label for="date">Date of Blessing:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-field">
+                <label for="prayer_request">Address (REQUIRED): </label>
+                <textarea id="prayer_request" name="prayer_request"></textarea>
+            </div>
+
+            
+
+            <div class="form-field">
+                <input type="checkbox" id="submit-checkbox" style="display: none;">
+                <input type="submit" id="submit-button" value="Submit">
+            </div>
+        </form>
+        <p id="success-message" class="success-message">Form successfully submitted!</p>
+    </div>
+</body>
+</html>

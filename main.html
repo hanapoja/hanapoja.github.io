@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+<head>
+	<meta charset="UTF-8">
+	<title>PSOS | Parish System Online Services</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap" rel="stylesheet">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="main.css" rel="stylesheet">
+</head>
+<body>
+	<header class = "sticky">
+		<h2><a href="#">PSOS</a></h2>
+		<ul class="nav">
+			<li>
+				<a href="#" class="active">Home</a>
+			</li>
+			<li class ="dropdown">
+				<a href="#services">Services</a></button>
+				<div class="dropdown-services">
+					<a href="mass_intention.html" onclick="openPopup('mass_intention.html'); return false;">Mass Intentions</a>
+					<a href="baptism.html" onclick="openPopup('baptism.html'); return false;">Baptism</a>
+					<a href="funeral.html" onclick="openPopup('funeral.html'); return false;">Funeral</a>
+					<a href="wedding.html" onclick="openPopup('wedding.html'); return false;">Wedding</a>
+					<a href="prayerintentions.html" onclick="openPopup('prayerintentions.html'); return false;">Prayer Intentions</a>
+					<a href="#other-services">Other Services</a>
+				</div>
+			</li>
+			<li>
+				<a href="#about">About</a>
+			</li>
+	
+			<li>
+				<a href="#contact">Contact</a>
+			</li>
+            <li>
+				<a href="admin.html">Log-in</a>
+			</li>
+		</ul>
+	</header>
+<div class = main>
+	<section class="banner-area">
+		<div class="banner-img"></div>
+		<h3>Welcome to</h3>
+		<h1>Parish SYSTEM <span>ONLINE SERVICES</span></h1>
+        <div class = "buttons">
+            <a class="banner-serv" href="#services">Services</a>
+            <a class="banner-adm" href="#login">Login</a>
+        </div>
+	</section>
+	<section class="about-area" id="about">
+		<h3 class="section-title">About <span>Us</span></h3>
+		<ul class="about-content">
+			<li class="about-left"></li>
+			<li class="about-right">
+				<h2>We are Taking Small Steps to Make Life Eeasier For Parishes</h2>
+				<p>What We Offer:</p>
+				<p><i class="fa fa-arrow-right"></i> Convenience for Parishioners: Register for services anytime, anywhere with our user-friendly online forms. No more waiting in line or filling out paper forms!</p>
+				<p><i class="fa fa-arrow-right"></i> Efficiency for Administrators: Manage registrations, generate reports, and streamline workflows with our powerful online tools.</p>
+				<p><i class="fa fa-arrow-right"></i> Improved Communication: Stay informed with automated notifications and a centralized system for all parish services.</p>
+			</li>
+		</ul>
+	</section>
+	<section class="msg-area">
+		<div class="msg-content">
+			<h1>Our Mission</h1>
+			<p class="mission">PSOS is committed to providing a modern and efficient solution for parish communities. We believe technology can enhance communication, accessibility, and overall parish operations.</p>
+            <p class="join">Join us and experience the future of parish services!</p>
+        </div>
+	</section>
+	<section class="services-area" id="services">
+		<h3 class="section-title">Our <span>Services</span></h3>
+		<ul class="services-content">
+			<li class="services-list">
+				<a href="mass_intention.html" onclick="openPopup('mass_intention.html'); return false;">
+					<img alt="" src="images/1.jpg" class="img-serv">
+					<h4>mass intentions</h4>
+				</a>
+			</li>
+			<li class="services-list">
+				<a href="baptism.html" onclick="openPopup('baptism.html'); return false;">
+					<img alt="" src="images/7.jpg" class="img-serv">
+					<h4>baptism</h4></a>
+				</a>
+			</li>
+			<li class="services-list" >
+				<a href="funeral.html" onclick="openPopup('funeral.html'); return false;">
+				<img alt="" src="images/8.jpg" class="img-serv">
+				<h4>funeral</h4></a>
+				</a>
+			</li>
+            <li class="services-list">
+				<a href ="wedding.html" onclick="openPopup('wedding.html'); return false;">
+				<img alt="" src="images/9.jpg" class="img-serv">
+				<h4>wedding</h4></a>
+				</a>
+			</li>
+			<li class="services-list">
+				<a href ="prayerintentions.html" onclick="openPopup('prayerintentions.html'); return false">
+				<img alt="" src="images/11.png" class="img-serv">
+				<h4>prayer intentions</h4></a>
+				</a>
+			</li>
+			<li class="services-list">
+				<a href ="other_services.html" onclick="openPopup('other_services.html'); return false">
+				<img alt="" src="images/12.jpg" class="img-serv">
+				<h4>Other Services</h4></a>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<section class="contact-area" id="contact">
+		<h3 class="section-title">Our <span>Contact</span></h3>
+		<ul class="contact-content">
+			<li>
+				<i class="fa fa-map-marker"></i>
+				<p>123, Naga<br>
+				Camarines Sur</p>
+			</li>
+			<li>
+				<i class="fa fa-phone"></i>
+				<p>+123 456 789<br>
+				+789 456 123</p>
+			</li>
+			<li>
+				<i class="fa fa-envelope"></i>
+				<p>info@psos.com<br>
+				psos@website.com</p>
+			</li>
+		</ul>
+	</section>
+	<footer>
+		<p>All Right Reserved by PSOS Group</p>
+	</footer>
+</div>
+
+<script type="text/javascript">
+	window.addEventListener("scroll", function() {
+		var header = document.querySelector("header");
+		header.classList.toggle("sticky", window.scrollY > 0);
+	})
+
+	function openPopup(url) {
+        var modal = document.createElement('div');
+        modal.className = 'modal';
+        modal.innerHTML = '<div class="modal-content"><span class="close" onclick="closePopup()">&times;</span><iframe src="' + url + '" frameborder="0"></iframe></div>';
+        document.body.appendChild(modal);
+    }
+
+    function closePopup() {
+        var modal = document.querySelector('.modal');
+        modal.parentNode.removeChild(modal);
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funeral Request Form</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body class="body-forms">
+    <div class="form-container">
+        <h2 class="form-title">Funeral Request Form</h2>
+        <form id="funeral-request-form" action="#success-message">
+
+            <div class="form-field">
+                <label for="deceased_name">Deceased Name:</label>
+                <input type="text" id="deceased_name" name="deceased_name" required>
+            </div>
+
+            <div class="form-field">
+                <label for="date_of_death">Date of Death:</label>
+                <input type="date" id="date_of_death" name="date_of_death" required>
+            </div>
+
+            <div class="form-field">
+                <label for="relationship">Your Relationship to Deceased:</label>
+                <input type="text" id="relationship" name="relationship" required>
+            </div>
+
+            <div class="form-field">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-field">
+                <label for="church">Church or Funeral Home:</label>
+                <input type="text" id="church" name="church" required>
+            </div>
+
+            <div class="form-field">
+                <label for="date_of_funeral">Date of Funeral:</label>
+                <input type="date" id="date_of_funeral" name="date_of_funeral" required>
+            </div>
+
+            <div class="form-field">
+                <label for="additional_documents">Upload Documents:</label>
+                <input type="file" id="additional_documents" name="additional_documents" multiple accept=".pdf,.doc,.docx">
+                <small>Accepted file types: PDF, DOC, DOCX</small>
+            </div>
+
+            <div class="form-field">
+                <label for="additional_message">Additional Message (Optional):</label>
+                <textarea id="additional_message" name="additional_message"></textarea>
+            </div>
+
+            <div class="form-field">
+                <input type="checkbox" id="submit-checkbox" style="display: none;">
+                <input type="submit" id="submit-button" value="Submit">
+            </div>
+        </form>
+        <p id="success-message" class="success-message">Form successfully submitted!</p>
+    </div>
+</body>
+</html>

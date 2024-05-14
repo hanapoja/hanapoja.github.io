@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="refresh" content="delay_time; URL=new_website_url" />
+	<title>PSOS | Parish System Online Services</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap" rel="stylesheet">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="admin.css" rel="stylesheet">
+</head>
+
+<body>
+	<header class = "sticky">
+		<h2><a href="#">PSOS</a></h2>
+		<ul class="nav">
+			<li>
+				<a href="main.html">Home</a>
+			</li>
+			<li class ="dropdown">
+				<a href="#services">Services</a></button>
+				<div class="dropdown-services">
+					<a href="mass_intention.html" target="_blank">Mask Intentions</a>
+					<a href="baptism.html" target="_blank">Baptism</a>
+					<a href="funeral.html" target="_blank">Funeral</a>
+					<a href="#wedding">Wedding</a>
+					<a href="#prayer-intensions">Prayer Intentions</a>
+					<a href="#other-services">Other Services</a>
+				</div>
+			</li>
+			<li>
+				<a href="#about">About</a>
+			</li>
+	
+			<li>
+				<a href="#contact">Contact</a>
+			</li>
+            <li>
+				<a href="#admin" class="active">Log-in</a>
+			</li>
+		</ul>
+	</header>
+    <div class>
+    <section class="banner-area">
+        <div class="login">
+            <h1>USER LOG-IN</h1>
+            <h3>Enter your login credentials</h3>
+            <form action="">
+                <label for="first">
+                      Username:
+                  </label>
+                <input type="text"
+                       id="first"
+                       name="first"
+                       placeholder="Enter your Username" required>
+     
+                <label for="password">
+                      Password:
+                  </label>
+                <input type="password"
+                       id="password"
+                       name="password"
+                       placeholder="Enter your Password" required>
+     
+                <div class="wrap">
+                    <button type="submit"
+                            onclick="solve()">
+                        Log In
+                    </button>
+                </div>
+            </form>
+            <p>Don't have an account? 
+                  <a href="#create_acc"
+                   style="font-weight: bolder;">
+                    Click here.
+                </a><br>
+				Are you an administrator? 
+				<a href="#"
+				 style="font-weight: bolder;">
+				  Contact developers.
+			  </a>
+            </p>
+
+        </div>
+    <div class="banner-img"></div>
+    
+    
+	</section>
+
+
+      
+	
+	<section class="contact-area" id="contact">
+		<h3 class="section-title">Our <span>Contact</span></h3>
+		<ul class="contact-content">
+			<li>
+				<i class="fa fa-map-marker"></i>
+				<p>123, Naga<br>
+				Camarines Sur</p>
+			</li>
+			<li>
+				<i class="fa fa-phone"></i>
+				<p>+123 456 789<br>
+				+789 456 123</p>
+			</li>
+			<li>
+				<i class="fa fa-envelope"></i>
+				<p>info@psos.com<br>
+				psos@website.com</p>
+			</li>
+		</ul>
+	</section>
+	<footer>
+		<p>All Right Reserved by PSOS Group</p>
+	</footer>
+</div>
+
+<script type="text/javascript">
+	window.addEventListener("scroll", function() {
+		var header = document.querySelector("header");
+		header.classList.toggle("sticky", window.scrollY > 0);
+	})
+</script>
+</body>
+</html>

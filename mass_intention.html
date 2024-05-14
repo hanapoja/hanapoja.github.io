@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mass Intention Request Form</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body class="body-forms">
+    <div class="form-container">
+        <h2 class="form-title">Mass Intention Request Form</h2>
+        <form id="mass-intention-form" action="#success-message">
+
+            <div class="form-field">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-field">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-field">
+                <label for="intention_for">Intention For:</label>
+                <input type="text" id="intention_for" name="intention_for" required>
+            </div>
+
+            <div class="form-field">
+                <label for="date">Date of Mass:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-field">
+                <label for="additional_message">Additional Message (Optional):</label>
+                <textarea id="additional_message" name="additional_message"></textarea>
+            </div>
+
+            <div class="form-field">
+                <input type="checkbox" id="submit-checkbox" style="display: none;">
+                <input type="submit" id="submit-button" value="Submit">
+            </div>
+        </form>
+        <p id="success-message" class="success-message">Form successfully submitted!</p>
+    </div>
+</body>
+</html>
